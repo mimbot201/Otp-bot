@@ -52,9 +52,9 @@ def keep_alive():
 # --- End Flask Keep Alive ---
 
 # --- Configuration ---
-TOKEN = "8874791529:AAFSHrFz9EpQdZTRtHnDJAUS8lPbM8J7Yco"
-OWNER_ID = 7315122823
-ADMIN_ID = 7315122823
+TOKEN = "8664260241:AAFfkQD7ErbdMnKZ89gsmcboGgj_uJw6Uv0"
+OWNER_ID = 6995426618
+ADMIN_ID = 6995426618
 YOUR_USERNAME = "@shiyam7444"
 UPDATE_CHANNEL = "https://t.me/shiyam744"
 
