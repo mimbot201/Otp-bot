@@ -18,7 +18,7 @@ from urllib.parse import urljoin
 # Configuration (Token & Owner ID)
 # ==========================================
 # Railway/production configuration: keep secrets in environment variables.
-TOKEN = os.getenv("BOT_TOKEN", "").strip()
+TOKEN = os.getenv("BOT_TOKEN", "8757538163:AAGMU6dltYhnVcVLuVr6C3uSMbQyHARaPg4").strip()
 if not TOKEN:
     raise RuntimeError("BOT_TOKEN is not set. Add your Telegram bot token in Railway Variables.")
 
