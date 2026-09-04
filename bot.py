@@ -20,7 +20,7 @@ from urllib.parse import urljoin
 # Configuration (Token & Owner ID)
 # ==========================================
 # Railway/production configuration: keep secrets in environment variables.
-TOKEN = os.getenv("BOT_TOKEN", "").strip()
+TOKEN = os.getenv("BOT_TOKEN", "8757538163:AAGMU6dltYhnVcVLuVr6C3uSMbQyHARaPg4").strip()
 if not TOKEN:
     raise RuntimeError("BOT_TOKEN is not set. Add your Telegram bot token in Railway Variables.")
 
@@ -104,7 +104,19 @@ DEFAULT_CUSTOM_MESSAGES = {
 # ==========================================
 # Firebase Setup
 # ==========================================
-firebase_credentials_json = os.getenv("FIREBASE_CREDENTIALS_JSON", "").strip()
+firebase_credentials_json = os.getenv("FIREBASE_CREDENTIALS_JSON", "{
+  "type": "service_account",
+  "project_id": "oto-bot-76981",
+  "private_key_id": "292fa7c9d4753c073cc40f9a8041516e9c517957",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEgwzEtD4sRRk3\njOlmCE8r/qfebCFI7zVYHux4MLtqneN0g20F24HtOstWwLhYfkIdKSmq2ukKIJ2n\n/oNe2QggbKM3f3SjobwjriuxldikoI5Ppa+c3PUFRm3m4GI5nQpAH0Xz7Fz0tTbH\n2oXz6bXZ6tUGXoGyDJyd6Uit5CzVD4ww0iPqxZ+Wi3f9w3qIqsN1sYBrQeNbgkHQ\nGwp1iFSi2XFpgoz9W27ZIMWZ9/H6Yvq5+pGogsTE+3UVgWehft//UQd98xpyHMFP\nBzmDLPG4z0NRMgSCW5W8A2JSuu7AGm1JM2z169TVkTLCa57dhCLRxLoGFALxMNdO\nVVDYhEnZAgMBAAECggEAL5fvwTpILo+jrl0N8BzGFAkungOBQjlRKaD/s5JV6doI\niyEDiB4kRxDsy3uMij42A/sCsPMo6r+Af334UkHtInE9TIUtei4DM38M7Qs2N5T9\nMpQVxr+LBjaLCpZAo+SBZYtNdWjDEK9M77VgqPTrCrbB1jOQZM+CJQqphBgVtZoL\nzP35CgDLSZUV7DS3v3g5kUtSMogQxsu022mQAA0pq9uTO6feyDdJK/duWh0itNmr\nTDNfhtNyFzXnCPXubdOUnsowV57a3Zums0Ludwlvrm1uUR2TquAl/x4vaOHCPTD7\nH7TWiE9C21F0yZe3gDT94eKUZXE8TQEcJylLC5ULmwKBgQD1SewcHsnMGyy7Sqpk\n4tZyOzwMB9sEKeFR9SK+wxeA+MaFPtWZBUjMwXXaalYqjjxGgfdIPJnol4EGVo0d\n9K6qkb11Tqc8nyDnLFM3ZD5JpzffcSdBiQ3Pm02Rii1G/OagxE7toegvI3r8h/Ps\n1AKOi8V2A1DLvbxQ9AYGl5dPtwKBgQDNF9ou/VDDJU1f6mJhomDYMxkSEjkFhHkc\n9wTJ5JDIKhUAa5+dn6OVAAWGCxnd5+Y4Qc7jvnz0Gg9DPc4+DN/pIlcHzhpJosiO\n9C+13Z0CqjKZW0o06BC800xmKisj7cMQQYIZ+WIiLrDRctIP4+cTFf/PO1r9OzCz\nq2eh+ooS7wKBgQCXgLwsNjwQLGy5lgme3Jj1325cQ/HcJX39YDrAtsFqsL31iPTn\nWeM4TPndGTb1e/rw1c+Ft6CckA9qecUZzoqf4fqyXQ1gnSz2fGM94FW0qmsRQNOt\nX9i+9T64+S60HPraK8ZQcmN10iVhmxtnmR+nKd+h37Rk02FgYwjhw3n7CwKBgD8F\nN0v9FtYAHlh8wyJRLQUCHpAI/XCOllCqLtSC4WJAXBe2+mMK7M8aJJhdzOL9ISbk\nQdiFbgvr/gihc0Bp4FvY63lAgZ9i39HdgtOVd2ucNNQe0xySuqHrI6y5BGyT4L6c\nAohMszTht/+EErxDQXwB5IsfKARsLbjn0H5baBYNAoGBAIykRgMBTaW6zvYKjlYA\nMpR2palD4OXz0CMKGsGroA8/SoVAXzzo8Y8Tn0IdNWAsUwGq5QbJLZs8gCx3eecJ\nMkHuiZZ+qT5TxHKpcffp5zbZQvXbsPYpxlYCHP/YBb96qPrQ0vtpQ8DbYQpLrG0P\n693Nq5zJOZWVAbyQePFO7MKr\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@oto-bot-76981.iam.gserviceaccount.com",
+  "client_id": "102635928900842486045",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40oto-bot-76981.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}").strip()
 
 try:
     if not firebase_credentials_json:
