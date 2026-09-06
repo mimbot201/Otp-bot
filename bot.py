@@ -53,7 +53,7 @@ def keep_alive():
 TOKEN = os.getenv("BOT_TOKEN", "8664260241:AAFfkQD7ErbdMnKZ89gsmcboGgj_uJw6Uv0")
 OWNER_ID = int(os.getenv("OWNER_ID", "6995426618"))
 ADMIN_ID = int(os.getenv("ADMIN_ID", str(OWNER_ID)))
-YOUR_USERNAME = os.getenv("YOUR_USERNAME", "@shiyam7444")
+YOUR_USERNAME = os.getenv("YOUR_USERNAME", "@robotXmehedi")
 
 # --- Payment / Hosting Configuration ---
 PAYMENT_INFO_DEFAULT = "Payment instructions are not configured yet. Please contact the admin."
